@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/editIncomeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/etAmountIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="#393939"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etDescriptionIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAmountIncome"
+            android:hint="Description"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#393939"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvDateSelectorIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDescriptionIncome"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="2dp"
+            android:background="#4A03A9F4"
+            android:padding="10dp"
+            android:text="date"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDateSelectorIncome"
+            android:layout_alignParentStart="true"
+            android:layout_margin="20dp"
+            android:background="@color/transparent"
+            android:text="CANCEL"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDateSelectorIncome"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:background="@color/transparent"
+            android:text="SAVE"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:focusable="true" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

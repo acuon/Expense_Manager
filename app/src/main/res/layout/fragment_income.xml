@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".fragments.IncomeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvIncome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/frameLayoutIncome"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/editIncomeFrame"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_height="300dp">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/etAmountIncome"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Amount"-->
+<!--                android:inputType="numberDecimal"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="#393939"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/etDescriptionIncome"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/etAmountIncome"-->
+<!--                android:hint="Description"-->
+<!--                android:inputType="text"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="#393939"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDateSelectorIncome"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/etDescriptionIncome"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:layout_marginLeft="2dp"-->
+<!--                android:background="#4A03A9F4"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="date"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSubmitIncome"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="submit"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </FrameLayout>-->
+
+</RelativeLayout>

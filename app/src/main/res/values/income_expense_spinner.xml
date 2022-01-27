@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="income_expense_spinner">
+
+        <item>Income</item>
+        <item>Expense</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="15dp"
+    tools:context=".AddActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_back"
+            android:text="BACK"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinnerIncomeExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="10dp"
+        android:contextClickable="true"
+        android:entries="@array/income_expense_spinner"
+        android:pointerIcon="arrow"
+        android:prompt="@array/income_expense_spinner" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerIncomeExpense"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="#393939"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAmount"
+        android:hint="Description"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#393939"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDateSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDescription"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="2dp"
+        android:background="#4A03A9F4"
+        android:padding="10dp"
+        android:text="date"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="submit"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
