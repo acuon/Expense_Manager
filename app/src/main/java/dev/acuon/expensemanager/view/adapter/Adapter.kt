@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import dev.acuon.expensemanager.MainActivity
 import dev.acuon.expensemanager.R
 import dev.acuon.expensemanager.models.ExpenseTable
 import dev.acuon.expensemanager.models.IncomeTable
@@ -42,8 +43,8 @@ class MoneyIncomeViewHolder(itemView: View, var onItemClickListener: IncomeClick
         itemView.apply {
             tvAmount.text = money.amount.toString()
             tvDescription.text = money.description
-            tvDate.text = money.date
-
+            tvDate.text = MainActivity().date(money.date)
+            tvMonth.text = MainActivity().month(money.date)
 
             ibEdit.setOnClickListener {
                 onItemClickListener.editClick(money, adapterPosition)
@@ -89,8 +90,9 @@ class MoneyExpenseViewHolder(itemView: View, var onItemClickListener: ExpenseCli
         itemView.apply {
             tvAmount.text = money.amount.toString()
             tvDescription.text = money.description
-            tvDate.text = money.date
-
+//            tvDate.text = money.date
+            tvDate.text = MainActivity().date(money.date)
+            tvMonth.text = MainActivity().month(money.date)
 
             ibEdit.setOnClickListener {
                 onItemClickListener.editClick(money, adapterPosition)

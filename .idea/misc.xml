@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable-v24/ic_add.xml" value="0.2203125" />
         <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_add.xml" value="0.10371376811594203" />
+        <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_main.xml" value="0.13451086956521738" />
         <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/edit_details.xml" value="0.1" />
-        <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/item_layout.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_expense.xml" value="0.13451086956521738" />
+        <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/fragment_income.xml" value="0.13451086956521738" />
+        <entry key="..\:/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/item_layout.xml" value="0.5294117647058824" />
       </map>
     </option>
   </component>

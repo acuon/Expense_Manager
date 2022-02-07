@@ -8,6 +8,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private val monthArray = arrayOf("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,7 +22,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
 
+    fun date(date: String): String {
+        val day = date.split("-")
+        return day[0]
+    }
+
+    fun month(date: String): String {
+        val day = date.split("-")
+        val month = day[1].toInt()
+        return monthArray[month-1]
     }
 
     private fun setAdapter() {
